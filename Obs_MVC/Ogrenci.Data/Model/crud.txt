@@ -1,0 +1,5 @@
+﻿add-migration Initial -Context "DataContext" -StartupProject "Obs_MVC" -Project "Ogrenci.Data"
+
+update-database -Context "DataContext" -StartupProject "Obs_MVC" -Project "Ogrenci.Data"
+
+remove-migration -Context "DataContext" -StartupProject "Obs_MVC" -Project "Ogrenci.Data"

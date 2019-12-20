@@ -1,0 +1,181 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #085e90;
+            font-family: sans-serif;
+        }
+
+        .sayfa {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #baslik {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .orta {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .orta-sol {
+            float: left;
+            width: 450px;
+            color: #bbb;
+        }
+
+
+        .orta-sag {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .alt {
+            background: #555;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .alt a {
+                color: #fff;
+            }
+
+        .temizle {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+        <div class="ust">
+            <a id="baslik" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Hukuk","Departments")">İletişim</a></li>
+            </ul>
+            <div class="temizle"></div>
+        </div>
+        <div class="orta">
+            <div class="orta-sol">
+                <img src="~/malzeme.jpg" height="450px" width="450px" />
+                <fieldset>
+                    <legend>
+                        Yönetim Kurulu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof. Dr. Kemal GİDER</td>
+
+                        </tr>
+                        <tr>
+                            <td>Dekan Yrd. : </td>
+                            <td>Prof. Dr. Yusuf Ziya SENGÖR </td>
+                        </tr>
+                        <tr>
+                            <td>Böl.Bşk.Yrd. </td>
+                            <td>Dr. Öğretim Üyesi Sertap ARPA </td>
+                        </tr>
+                        <tr>
+                            <td>Çift Anadal Koordinatörü: </td>
+                            <td>Doç. Dr. Osman GAZİ </td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Öğr. Üyesi : </td>
+                            <td> Deniz KARADEMİR </td>
+                        </tr>
+
+                        <tr>
+                            <td>Yüksek Lisans Koordinatörü : </td>
+                            <td> Dr. Öğretim Üyesi Sema AYDIN </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+            </div>
+            <div class="orta-sag">
+                <h1>Malzeme Bilimi ve Mühendisliği</h1>
+                <p>
+                    Malzeme Bilimi, malzemelerin yapıları ve özellikleri arasındaki ilişkileri inceleyen bilim dalıdır.      </p>
+                <p>
+                    Malzeme Mühendisliği ise, malzemelerin yapı-özellik bağıntılarından yola çıkılarak istenen özellikte malzemelerin geliştirilmesidir.
+
+                </p>
+                <p>Malzeme Bilimi ve Mühendisliğinin çalışma alanlarından bazıları:</p>
+                <p>
+                    -Demir-çelik<br />
+                    -Demir ve demir dışı alaşımlar<br />
+                    -Nanomalzemeler (nanoparçacıklar, nanoteller, nanotüpler, grafen)<br />
+                    -Enerji malzemeleri (güneş pilleri, bataryalar, hidrojen depolama)<br />
+                    -Fonksiyonel ince film kaplamalar (ısıya ve ışığa duyarlı akıllı camlar)<br />
+                    -Biyomalzemeler (yapay organlar, sentetik dokular)<br />
+                    -Kompozit malzemeler (parçacık takviyeli, fiber takviyeli ve yapısal kompozitler)<br />
+                    -Elektronik malzemeler (yarıiletkenler, diyotlar, transistörler, kapasitörler, piezoelektrik ve ferroelektrik malzemeler)<br />
+                    -Polimer ve organik malzemeler (plastikler, elastomerler, alev geciktirici polimerler)<br />
+                    -Geleneksel seramikler (camlar, kil ürünleri, refrakterler, çimento)<br />
+                    -Teknik seramikler (yapısal ve işlevsel seramikler)<br />
+                    -Modelleme ve simülasyon (malzeme özellikleri, üretim süreçlerinin belirlenmesi)<br />
+                </p>
+            </div>
+            <div class="temizle"></div>
+        </div>
+        <div class="alt">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">İletişim</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="temizle"></div>
+        </div>
+    </div>
+</body>
+</html>
+

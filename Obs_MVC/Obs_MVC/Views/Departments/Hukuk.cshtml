@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #085e90;
+            font-family: sans-serif;
+        }
+
+        .sayfa {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #baslik {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .orta {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .orta-sol {
+            float: left;
+            width: 450px;
+            color: #bbb;
+        }
+
+
+        .orta-sag {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .alt {
+            background: #555;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .alt a {
+                color: #fff;
+            }
+
+        .temizle {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+        <div class="ust">
+            <a id="baslik" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Hukuk","Departments")">İletişim</a></li>
+            </ul>
+            <div class="temizle"></div>
+        </div>
+        <div class="orta">
+            <div class="orta-sol">
+                <img src="~/hukuk.jpg" height="450px" width="450px" />
+                <fieldset>
+                    <legend>
+                        Yönetim Kurulu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof. Dr. Ahmet Gündüz</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Üye : </td>
+                            <td>Prof. Dr. Doğan ASLAN </td>
+                        </tr>
+                        <tr>
+                            <td>Üye (Özel Hukuk Bölüm Başkanı): </td>
+                            <td>Prof. Dr. Salih BAŞKAN </td>
+                        </tr>
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof.Ahmet Gündüz </td>
+                        </tr>
+                        <tr>
+                            <td>Üye : </td>
+                            <td>Prof. Dr. Kemal OĞUZ </td>
+                        </tr>
+
+                        <tr>
+                            <td>Üye : </td>
+                            <td>Prof. Dr. Mert CAN </td>
+                        </tr>
+                        <tr>
+                            <td>Üye : </td>
+                            <td>Doç. Dr. Uğur BAYILLI</td>
+                        </tr>
+                        <tr>
+                            <td>Üye: </td>
+                            <td>Dr. Öğr. Üyesi Uğur İRİŞ </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+
+            </div>
+            <div class="orta-sag">
+                <h1>Hukuk Fakültesi</h1>
+                <p>
+                    Hukuk fakülteleri mezun olunduktan sonra en fazla iş alanına sahip fakültelerden biridir. Bu sizin kendinizi geliştirdiğiniz alanlara ve yapmak istediğiniz mesleğe göre şekillenebilecek bir süreçtir. Avukatlık, hakimlik, savcılık, hukuk müşavirliği, ve noterlik gibi meslekler bu alanda ilk akla gelen mesleklerdir. Farklı uzmanlık alanlarında danışmanlık yapabilirler. Ayrıca her lisans mezunun yönelebileceği akademik çalışmalar yapmak seçenekler arasında yer alabilir.
+                </p>
+                <p>
+                    Hukuk eğitimi, yüzyıllara varan gelenekleri olan bir eğitim dalıdır; ve bu, bugün de tüm dünyada sürdürülür.
+
+                    Fakat öte yandan, 20. yüzyılın son çeyreğiyle birlikte belirginlik kazanan ve 21. yüzyıla uzanan küreselleşme olgusu, ulus devlet ve ulusal hukuk anlayışı üzerinde her konuda büyük bir etki yarattığı kadar, hukuk eğitiminin tasarımını da yeniden gözden geçirmeyi gerektirdi. Bu bağlamda, örneğin her hukuki sorunun uluslararası bir cephesi olabileceği gibi, bir ülkede doğup diğer ülkelere uzanan ve onların hukuk düzenlerini etkileyebilecek nitelikte hukuki nitelikte sorunlarla karşılaşılması mümkündür.
+
+                    Özellikle iş dünyası ve ekonomik sahada, üretim ya da hizmet sürecinin (“değer zinciri”) ulusal sınırların ötesinde bir kapsayıcılığa sahip olması ve bunun doğurduğu ilişkilerin hukuku, anılan olguya bir örnek oluşturur. Keza, insanın haklarına dair hukuki standartların belirlenmesi konusunda da, devletlerce, evrensel hukuki ölçülere saygı gösterme ve riayet etme mekanizmalarının sayısının artması, bu defa hak temelli küresel bir düzene işaret eder.        Bir hukuk eğitimi, her ülkede olduğu gibi, elbette öncelikle ulusal hukukun ve buna ilişkin uygulamanın öğretilmesini hedefler fakat ulusal hukukun, etkileşim içinde bulunduğu uluslararası zemindeki hukuk ilişkilerinin esaslı olarak incelenmesi de bu kapsama dahil edilmek zorundadır.
+
+                    Hukuk, çok yalın bir ifadeyle, insanlar arasındaki ilişkilerin düzenlenmesini ve buna uygun yürütülmesini hedefler. Özellikle, insanlar arasındaki birbirinden çok farklı nedenlere bağlı olabilen ilişkilerin kurulması ve sürdürülmesi, eşitsizliklerin değerlendirilmesi ve giderilmesinde, hukuki yöntemin önemi yadsınamaz. Öte yandan, üzerinde yaşadığımız topraklar ve dünya üzerindeki tüm faaliyetlerimizin yine kendi ülkemiz ve dünya üzerinde neden olduğu etkiler de, yaklaşık son elli yıldır hukukun da alanına dahil edilen temel sorunlar niteliğini kazandı. 2015-2030 yılları arasını kapsayan bir dönem için kabul edilen ve tüm devletleri kavrayan bir kalkınma seferberliğine dair ilkeler manzumesi (Sürdürülebilir Kalkınma Hedefleri/Sustainable Development Goals) bu sorumluluğun bir bileşkesidir.
+                </p>
+            </div>
+            <div class="temizle"></div>
+        </div>
+        <div class="alt">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")"style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">İletişim</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="temizle"></div>
+        </div>
+    </div>
+</body>
+</html>

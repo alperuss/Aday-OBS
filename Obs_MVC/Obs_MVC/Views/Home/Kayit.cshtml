@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<html  >
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('pattern.jpg') #085e90;
+            font-family: sans-serif;
+        }
+
+        .page {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #title {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .middle {
+            margin-top: 15px;
+            background-color:burlywood;
+        }
+
+        .middle-left {
+            float: left;
+            width: 450px;
+        }
+
+
+        .middle-right {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .bottom {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .bottom a {
+                color: #fff;
+            }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <div>
+            <a id="title" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Contact","Home")">Bize Ulaşın</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="middle" id="SignUp">
+
+
+            <form>
+                <fieldset>
+                    <legend>
+                        Kayıt Formu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Adınız : </td>
+                            <td><input type="text" id="Name"> </td>
+                        </tr>
+                        <tr>
+                            <td>Soyadınız : </td>
+                            <td><input type="text" id="Surname"> </td>
+                        </tr>
+                        <tr>
+                            <td>Öğrenci Numaranız : </td>
+                            <td><input type="text" id="StudentNo"> </td>
+                        </tr>
+                        <tr>
+                            <td>E-Posta Adresiniz : </td>
+                            <td><input type="text" id="Email"> </td>
+                        </tr>
+                        <tr>
+                            <td>Telefonunuz : </td>
+                            <td><input type="text" id="Phone" placeholder="+90(___)(_______)"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>TC Kimlik Numaranız : </td>
+                            <td><input type="text" id="TcId" placeholder="11 hane olmalıdır."> </td>
+                        </tr>
+                        <tr>
+                            <td>Doğum Tarihiniz : </td>
+                            <td><input type="date" id="Birthday"> </td>
+                        </tr>
+                        <tr>
+                            <td>Doğum Yeriniz : </td>
+                            <td><input type="text" id="BirthPlace"> </td>
+                        </tr>
+                        <tr>
+                            <td>Cinsiyetiniz : </td>
+
+                            <td>
+                                <input type="radio" id="Male">Erkek
+                                <br />
+                                <input type="radio" id="Female">Kadın
+                                <br />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Okuduğunuz Bölüm</td>
+                            <td>
+                                <SELECT id="Department">
+
+                                    <OPTION value="">Bölüm Seçiniz</OPTION>
+                                    <OPTION value="Hukuk">Hukuk</OPTION>
+                                    <OPTION value="Mimar">Mimarlık</OPTION>
+                                    <OPTION value="Bilg">Bilgisayar Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Elektrik"> Elektrik-Elektronik Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Elektronik">Elektronik ve Haberleşme Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Endüstri">Endüstri Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Insaat">İnşaat Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Makine">Makine Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Malzeme">Malzeme Bilimi ve Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Mekatronik">Mekatronik Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="Yazılım">Yazılım Mühendisliği Bölümü</OPTION>
+                                    <OPTION value="İktisat">İktisat Bölümü</OPTION>
+                                    <OPTION value="İşletme">İşletme Bölümü</OPTION>
+                                    <OPTION value="Siyaset">Siyaset Bilimi ve Uluslararası İlişkiler Bölümü</OPTION>
+                                    <OPTION value="Psikoloji">Psikoloji Bölümü</OPTION>
+
+                                </SELECT>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Üniversiteye Giriş Yılınız : </td>
+                            <td><input type="text" id="Startdate"> </td>
+                        </tr>
+
+                    </table>
+                    <input type="button" value="Kaydet" onclick="Obs_MVC.Page.Home.Kayit.Send();" />
+                </fieldset>
+
+            </form>
+
+
+            <div class="clear"></div>
+        </div>
+        <div class="bottom">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="@Url.Action("Contact","Home")">Bize Ulaşın</a>
+
+            </p>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="Home-Kayit-Sending" style="display: none;">
+        <h3>Gönderiliyor...</h3>
+    </div>
+    <div id="Home-Kayit-Sent" style="display: none;">
+        <h3>Teşekkür Ederiz</h3>
+    </div>
+</body>
+</html>
+

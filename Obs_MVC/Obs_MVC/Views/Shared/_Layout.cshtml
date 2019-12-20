@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Http
+<!doctype html>
+<html>
+<head>
+    <title>X Üniversitesi</title>
+
+</head>
+<body>
+    <div style="background-color:burlywood;">
+        <a href="@Url.Action("Index","Home")" style="font-size:x-large">Anasayfa</a> -
+        <a href="@Url.Action("Departments","Home")">Bölümler</a> -
+        <a href="@Url.Action("Kayit","Home")">Kayıt Ol</a>
+
+    </div>
+    @RenderBody()
+</body>
+</html>

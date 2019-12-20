@@ -1,0 +1,189 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #085e90;
+            font-family: sans-serif;
+        }
+
+        .sayfa {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #baslik {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .orta {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .orta-sol {
+            float: left;
+            width: 450px;
+            color: #bbb;
+        }
+
+
+        .orta-sag {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .alt {
+            background: #555;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .alt a {
+                color: #fff;
+            }
+
+        .temizle {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+        <div class="ust">
+            <a id="baslik" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Hukuk","Departments")">İletişim</a></li>
+            </ul>
+            <div class="temizle"></div>
+        </div>
+        <div class="orta">
+            <div class="orta-sol">
+                <img src="~/elektrik.jpg" height="450px" width="450px" />
+                <fieldset>
+                    <legend>
+                        Yönetim Kurulu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof. Dr. Mehmet GÜN</td>
+
+                        </tr>
+                        <tr>
+                            <td>Dekan Yrd. : </td>
+                            <td>Prof. Dr. Demir ASLAN </td>
+                        </tr>
+                        <tr>
+                            <td>Böl.Bşk.Yrd. </td>
+                            <td>Prof. Dr. Semih BAŞKAN </td>
+                        </tr>
+                        <tr>
+                            <td>Üye : </td>
+                            <td>Dr.Ayşe GÜNDÜZ </td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Öğr. Üyesi : </td>
+                            <td> Oğuz ATAR </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dr. Öğr. Üyesi : </td>
+                            <td> Mert CAN </td>
+                        </tr>
+                        <tr>
+                            <td>Üye : </td>
+                            <td>Doç. Dr. Deniz BAY</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Öğr. Üyesi  </td>
+                            <td>Uğur KİRİŞ </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+
+            </div>
+            <div class="orta-sag">
+                <h1>Elektrik Elektronik Mühendisliği</h1>
+                <p>
+                    Misyonumuz, elektrik ve elektronik mühendisliğinin farklı alanlarında bilim ve teknoloji üretimine katkıda bulunmak, çağın gerektirdiği bilgi ve becerilerle donatılmış, problem çözme ve analitik düşünme yeteneğine sahip üstün nitelikli mühendisler yetiştirmek ve sanayi ile işbirliği içerisinde yürütülen mühendislik faaliyetleriyle ülkemizin teknolojik gelişimine destek olmaktır.
+
+                </p>
+                <p>
+                    Bölümümüzün vizyonu, "elektrik ve elektronik mühendisliğininde eğitim ve öğretim; bilim ve teknoloji üretimi; araştırma, geliştirme ve uygulama alanlarında en iyi olmak" şeklinde ifade edilebilir.
+
+                    Bölümümüzün Devre ve Sistemler, Elektromanyetik Dalgalar ve Mikrodalga, Elektronik, Elektrik Makinaları, Elektrik Tesisleri, Kontrol Sistemleri ve Telekomünikasyon Anabilim Dalları bulunmaktadır.
+
+                    Bölümümüzde öğretim ve araştırma konuları Haberleşme Sistemleri, Sinyal İşleme, Elektromanyetik ve Mikrodalga Teknikleri, Kontrol ve Kumanda Sistemleri, Bilgisayarlar ve Bilgisayar Ağları, Mikroelektronik, Biyomedikal Elektronik, Elektrik Makinaları ve Güç Sistemleri ana başlıkları altında yoğunlaşmıştır.
+                </p> 
+                <p>
+                    Üniversitemizin yüksek öğretimdeki yirmi yılı aşkın deneyimini arkasına alarak 2014 yılında akademik yaşama “merhaba” diyen bölümümüz, öğretim ve araştırma yönünden güçlü ve her yıl büyüyen kadrosuyla, geleceğin elektrik-elektronik mühendislerini yetiştirmeyi hedeflemektedir.
+
+                    <br />Temel mühendislik dallarından biri olan elektrik-elektronik mühendisliğinin, yaşamın pek çok alanına olan katkısı ve olumlu etkisi her geçen gün artmaktadır.  Bu olumlu etkiye, özellikle iletişim, sağlık, güvenlik ve eğitim alanlarında dünyanın her yerinde olduğu gibi ülkemizde de tanık olmaktayız.
+
+                    <br />  Bölümümüz, yetiştireceği öğrencileri, geleceğin teknoloji tasarlayıcıları ve yaşam mimarları olarak görmektedir. Amacımız çevresine duyarlı, katma değer üreten, mezuniyet sonrası hem kendi fikrileri üzerine kendi işini kurabilecek yetkinlikte, hem de dünyanın her yerinde kaliteli mühendislik yapabilecek nitelikte elektrik-elektronik mühendisleri yetiştirmektir.
+
+                    Bu amaca ulaşmak için gereken azimli, heyecanlı, konularında uzman akademik kadroya, çağdaş ve yeterli laboratuvar ve yerleşke olanaklarına sahibiz.
+
+                    Bizlerle bu heyecanımızı paylaşacak, öğrenerek, üreterek gelişecek, sizler gibi çalışkan ve meraklı gençleri aramızda görmek istiyor, sizleri, geleceğimizi birlikte kurmaya çağırıyoruz.
+                </p>
+            </div>
+            <div class="temizle"></div>
+        </div>
+        <div class="alt">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">İletişim</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="temizle"></div>
+        </div>
+    </div>
+</body>
+</html>
+

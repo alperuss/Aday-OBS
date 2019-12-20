@@ -1,0 +1,170 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #085e90;
+            font-family: sans-serif;
+        }
+
+        .sayfa {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #baslik {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .orta {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .orta-sol {
+            float: left;
+            width: 450px;
+            color: #bbb;
+        }
+
+
+        .orta-sag {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .alt {
+            background: #555;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .alt a {
+                color: #fff;
+            }
+
+        .temizle {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+        <div class="ust">
+            <a id="baslik" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Hukuk","Departments")">İletişim</a></li>
+            </ul>
+            <div class="temizle"></div>
+        </div>
+        <div class="orta">
+            <div class="orta-sol">
+                <img src="~/mimar.jpg" height="450px" width="450px" />
+                <fieldset>
+                    <legend>
+                        Yönetim Kurulu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof. Dr. Kemal GİDER</td>
+
+                        </tr>
+                        <tr>
+                            <td>Dekan Yrd. : </td>
+                            <td>Prof. Dr. Yusuf Ziya SENGÖR </td>
+                        </tr>
+                        <tr>
+                            <td>Böl.Bşk.Yrd. </td>
+                            <td>Dr. Öğretim Üyesi Sertap ARPA </td>
+                        </tr>
+                        <tr>
+                            <td>Çift Anadal Koordinatörü: </td>
+                            <td>Doç. Dr. Osman GAZİ </td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Öğr. Üyesi : </td>
+                            <td> Deniz KARADEMİR </td>
+                        </tr>
+
+                        <tr>
+                            <td>Yüksek Lisans Koordinatörü : </td>
+                            <td> Dr. Öğretim Üyesi Sema AYDIN </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+            </div>
+            <div class="orta-sag">
+                <h1>Mimarlık</h1>
+                <p>
+                    Mimarlık mesleği insanlık tarihinin en eski meslekleri arasında sayılır, çünkü yaşamın geçtiği her tür tasarlanmış çevrenin üretimiyle ilgilidir. Mimarlığın değişmez tanımı, Romalı mimar Vitruvius'un "sağlamlık, kullanışlılık, güzellik" (firmitas, commoditas, venustas) olarak dile getirdiği üç amacı içerir. Bu tanıma göre mimarlık; kullanım güvenliğine sahip, işlevine uygun, rahatlık koşullarını sağlayan ve insana yaşama zevki ve yücelik duygusu aşılayan (kısaca sağlam, kullanışlı, güzel) mekanların yaratılmasını hedefler. Bir yapıyı 'mimari eser' yapan, insan yerleşmelerini kente/şehre dönüştüren işte bu üç koşulun birlikte yerine gelmesidir. Bu üç koşul mimarlığın bilim, teknoloji ve sanat alanlarıyla eş dereceli bağlantısını da göstermektedir. Bilim, teknoloji ve sanat alanlarını buluşturan bir disiplin oluşu nedeniyle çok yönlü birikime sahip olmayı gerektiren mimarlığın, doğal olarak eğitimi de özenli bir ortam gerektirir. Fen alanında üstün başarılı öğrencilerin alındığı mimarlık okulları, bilim formasyonu ile sanat disiplini ve kültürünü bütünleştiren farklı bir eğitim kurgusu ve ortamına sahiptir.
+                </p>
+                <p>
+                    Donanımlı, kendine güveni olan, araştırma yapmasını bilen, kaynaklara hakim ve soyutlama becerisine sahip mimarlık mezunları, gerek iş gerekse akademi dünyasında aranan elemanlardır.
+                </p>
+
+
+               
+
+            </div>
+            <div class="temizle"></div>
+        </div>
+        <div class="alt">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">İletişim</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="temizle"></div>
+        </div>
+    </div>
+</body>
+</html>
+

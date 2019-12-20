@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('pattern.jpg') #085e90;
+            font-family: sans-serif;
+        }
+
+        .page {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #title {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .middle {
+            margin-top: 15px;
+            ;
+        }
+
+        .middle-left {
+            float: left;
+            width: 450px;
+        }
+
+
+        .middle-right {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .bottom {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .bottom a {
+                color: #fff;
+            }
+
+        .clear {
+            clear: both;
+        }
+        .bold{
+            font-family:sans-serif;
+            font-size:larger;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <div >
+            <a id="title" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Contact","Home")">Bize Ulaşın</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        
+            <div class="middle">
+                <div class="middle-left">
+                    <img src="~/fakülteler.jpg" height="470px" width="450px" />
+                </div>
+                <div class="middle-right">
+                    <div class="bold">Hukuk Fakültesi</div>
+                    <li><a href="@Url.Action("Hukuk","Departments")" style="text-decoration:none; color:#000000">Hukuk</a></li>
+                    <hr />
+                    <div class="bold">Mühendislik Fakültesi</div>
+                    <li><a href="@Url.Action("Bilgisayar","Departments")" style="text-decoration:none; color:#000000">Bilgisayar Mühendisliği</a></li>
+                    <li><a href="@Url.Action("ElektrikElektronik","Departments")" style="text-decoration:none; color:#000000">Elektrik-Elektronik Mühendisliği</a></li>
+                    <li><a href="@Url.Action("Elektronik","Departments")" style="text-decoration:none; color:#000000">Elektronik ve Haberleşme Mühendisliği</a></li>
+                    <li><a href="@Url.Action("Endüstri","Departments")" style="text-decoration:none; color:#000000">Endüstri Mühendisliği</a></li>
+                    <li><a href="@Url.Action("Insaat","Departments")" style="text-decoration:none; color:#000000">İnşaat Mühendisliği</a></li>
+                    <li><a href="@Url.Action("Makine","Departments")" style="text-decoration:none; color:#000000">Makine Mühendisliği</a></li>
+                    <li><a href="@Url.Action("Malzeme","Departments")" style="text-decoration:none; color:#000000">Malzeme Bilimi ve Mühendisliği</a></li>
+                    <li><a href="@Url.Action("Mekatronik","Departments")" style="text-decoration:none; color:#000000">Mekatronik Mühendisliği</a></li>
+                    <li><a href="@Url.Action("Yazilim","Departments")" style="text-decoration:none; color:#000000">Yazılım Mühendisliği</a></li>
+                    <hr />
+                    <div class="bold">Mimarlık Fakültesi</div>
+                    <li><a href="@Url.Action("Mimar","Departments")" style="text-decoration:none; color:#000000">Mimarlık</a></li>
+                    <hr />
+                    <div class="bold">İktisadi ve İdari Bilimler Fakültesi</div>
+                    <li><a href="@Url.Action("Iktisat","Departments")" style="text-decoration:none; color:#000000"> İktisat Bölümü</a></li>
+                    <li><a href="@Url.Action("Isletme","Departments")" style="text-decoration:none; color:#000000"> İşletme Bölümü</a></li>
+                    <li><a href="@Url.Action("Siyaset","Departments")" style="text-decoration:none; color:#000000">Siyaset Bilimi ve Uluslararası İlişkiler Bölümü</a></li>
+                    <hr />
+                    <div class="bold">Fen-Edebiyat Fakültesi</div>
+                    <li><a href="@Url.Action("Psikoloji","Departments")" style="text-decoration:none; color:#000000">Psikoloji</a></li>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+               
+          
+
+
+            
+        
+        <div class="bottom">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="@Url.Action("Contact","Home")">Bize Ulaşın</astyle="color:#7d0d0d">
+
+
+            </p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

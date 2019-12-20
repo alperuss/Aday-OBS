@@ -1,0 +1,170 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #085e90;
+            font-family: sans-serif;
+        }
+
+        .sayfa {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #baslik {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .orta {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .orta-sol {
+            float: left;
+            width: 450px;
+            color: #bbb;
+        }
+
+
+        .orta-sag {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .alt {
+            background: #555;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .alt a {
+                color: #fff;
+            }
+
+        .temizle {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+        <div class="ust">
+            <a id="baslik" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Hukuk","Departments")">İletişim</a></li>
+            </ul>
+            <div class="temizle"></div>
+        </div>
+        <div class="orta">
+            <div class="orta-sol">
+                <img src="~/iktisat.jpg" height="450px" width="450px" />
+                <fieldset>
+                    <legend>
+                        Yönetim Kurulu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof. Dr. Kemal GİDER</td>
+
+                        </tr>
+                        <tr>
+                            <td>Dekan Yrd. : </td>
+                            <td>Prof. Dr. Yusuf Ziya SENGÖR </td>
+                        </tr>
+                        <tr>
+                            <td>Böl.Bşk.Yrd. </td>
+                            <td>Dr. Öğretim Üyesi Sertap ARPA </td>
+                        </tr>
+                        <tr>
+                            <td>Çift Anadal Koordinatörü: </td>
+                            <td>Doç. Dr. Osman GAZİ </td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Öğr. Üyesi : </td>
+                            <td> Deniz KARADEMİR </td>
+                        </tr>
+
+                        <tr>
+                            <td>Yüksek Lisans Koordinatörü : </td>
+                            <td> Dr. Öğretim Üyesi Sema AYDIN </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+            </div>
+            <div class="orta-sag">
+                <h1>İktisat Bölümü</h1>
+                <p>
+                    Dört yıllık Lisans eğitiminin yanında Finansal Ekonomi alanında Yüksek Lisans eğitimi sunan İktisat Bölümü’nün amacı, modern iktisat biliminin araç ve yöntemlerini kullanarak iktisadi olguları kavrama ve yorumlama yeteneğine sahip, problem çözme ve eleştirel düşünce becerileri gelişmiş bireyler yetiştirmektir. Bu amaca yönelik olarak öğrenciler, temel iktisat teorisi derslerinin yanında istatistiksel, matematiksel ve ekonometrik analiz yöntemlerini öğreten dersler almaktadırlar. Bölümümüz, yurt içi ve yurt dışındaki seçkin üniversitelerden doktorasını almış, ulusal ve uluslararası yayınlarıyla kendi alanında tanınmış öğretim elemanı kadrosuyla öğrencilerimize dünya standartlarında bir iktisat eğitimi vermektedir.
+                </p>
+                <p>
+                    Bölümümüzde mikro ve makro iktisat, para ve banka, uluslararası iktisat, maliye, muhasebe, finansal iktisat, oyun teorisi, ekonometri, istatistik, matematik, bilgisayar gibi temel derslerin yanında, üçüncü ve dördüncü sınıflarda öğrencilerin bölüm bünyesinde kendi ilgi alanlarına yönelmelerine imkan veren çok sayıda seçmeli ders olanağı sunulmaktadır. Geniş bir yelpazede sunulan dersler, öğrencilere kamu kurumlarında ve özel sektörde geniş iş imkanları sağlamaktadır. Mezuniyet sonrasında akademik çalışmalarını devam ettirmek isteyen öğrencilerse, yurt içi ve yurt dışındaki saygın üniversitelerde lisansüstü düzeyde eğitimlerini sürdürebilecekleri bir donanıma sahip olmaktadırlar.
+                </p>
+                <p>İktisat Bölümü’nün eğitim dili İngilizcedir. İktisat eğitimine başlamadan önce, İngilizcesi yeterli olmayan öğrenciler bir yıl İngilizce Hazırlık Okuluna devam ederler. İktisat öğrenimi süresince de her dönem açılan Akademik İngilizce dersleriyle öğrencilerin özellikle iktisat alanındaki İngilizce bilgileri derinleştirilir.</p>
+                <p>İktisat Bölümü Lisans Programımız, öğrencilerine, Üniversitede ilgi duydukları diğer bir bölümde Çift Anadal ve Yandal yapma imkanı da sağlamaktadır. Ayrıca öğrencilerimiz Erasmus Öğrenci Değişimi Programı çerçevesinde ikili anlaşmaların olduğu Avrupa Birliği üyesi ülke üniversitelerinde bir dönem ya da bir akademik yıl öğrenim görme olanağına sahiptirler.</p>
+
+
+            </div>
+            <div class="temizle"></div>
+        </div>
+        <div class="alt">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">İletişim</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="temizle"></div>
+        </div>
+    </div>
+</body>
+</html>
+

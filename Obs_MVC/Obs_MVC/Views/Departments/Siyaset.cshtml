@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #085e90;
+            font-family: sans-serif;
+        }
+
+        .sayfa {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #baslik {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .orta {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .orta-sol {
+            float: left;
+            width: 450px;
+            color: #bbb;
+        }
+
+
+        .orta-sag {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .alt {
+            background: #555;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .alt a {
+                color: #fff;
+            }
+
+        .temizle {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+        <div class="ust">
+            <a id="baslik" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Hukuk","Departments")">İletişim</a></li>
+            </ul>
+            <div class="temizle"></div>
+        </div>
+        <div class="orta">
+            <div class="orta-sol">
+                <img src="~/siyaset.jpg" height="450px" width="450px" />
+                <fieldset>
+                    <legend>
+                        Yönetim Kurulu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof. Dr. Kemal GİDER</td>
+
+                        </tr>
+                        <tr>
+                            <td>Dekan Yrd. : </td>
+                            <td>Prof. Dr. Yusuf Ziya SENGÖR </td>
+                        </tr>
+                        <tr>
+                            <td>Böl.Bşk.Yrd. </td>
+                            <td>Dr. Öğretim Üyesi Sertap ARPA </td>
+                        </tr>
+                        <tr>
+                            <td>Çift Anadal Koordinatörü: </td>
+                            <td>Doç. Dr. Osman GAZİ </td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Öğr. Üyesi : </td>
+                            <td> Deniz KARADEMİR </td>
+                        </tr>
+
+                        <tr>
+                            <td>Yüksek Lisans Koordinatörü : </td>
+                            <td> Dr. Öğretim Üyesi Sema AYDIN </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+            </div>
+            <div class="orta-sag">
+                <h1>Siyaset Bilimi ve Uluslararası İlişkiler Bölümü</h1>
+                <p>
+                    Siyaset Bilimi ve Uluslararası İlişkiler Bölümü lisans ve yüksek lisans eğitimi sunmaktadır. Bölümün temel felsefesi, siyasal olgu ve dinamikleri anlama ve yorumlama yeteneği kazandırmak olduğu kadar; öğrencilere analitik ve eleştirel düşünme ile birlikte alternatif görüşleri değerlendirebilme becerisi verebilmektir. Program öğrencilerin kamu kurumları, özel sektör, medya, araştırma kurumları ve uluslararası örgütlerde rahatlıkla iş bulabilmelerine yönelik olarak planlanmıştır. İkinci yıldan sonra öğrencilerin kendi eğilimleri doğrultusunda seçmeli derslere yönelmeleri sağlanarak disiplinler arası bir bakış açısı geliştirmeleri hedeflenmektedir. Ayrıca, bölümde öğrencilerin dil ve bilgisayar eğitimine de özel önem verilerek, uluslararası düzeyde rekabet edebilen bireyler yetiştirilmesi öngörülmektedir.
+                </p>
+                <p>
+                    Siyaset Bilimi disiplinli,siyasi düşünceyi bilimsel bir perspektifte ele alarak,onun farklı toplumsal ve tarihi bağlamlarda siyasi kurumlara olan etkisini irdelemektedir.Siyasal süreçlerin güncel analizi ve bu süreçlerin zaman içindeki gelişimini inceleyen Siyaset Bilimi disiplini,disiplinlerarası bir perspektifte sosyoloji,tarih,antropoloji ve felsefe gibi disiplinlerin bulgularındanda yararlanarak öğrencilerin zengin bir formasyon edinmelerine katkıda bulunur.Nitelikli bir akademik kadroya sahip bu programda öğrenciler,siyaset teorisi,karşılaştırmalı siyaset ve Türk siyaseti gibi Siyaset Biliminin temel konularında gerekli bilimsel donanıma sahip olur.
+                </p>
+                <p>
+                    Siyaset Biliminden daha yakın zamanda ortaya çıkmış olan Uluslararası İlişkiler disiplini giderek artan bir öneme sahip olmaktadır.Başta devletler olmak üzere,uluslararası sistem içinde yer alan çeşitli odaklar (hükümetler arası ve hükümetler dışı örgütler,çok uluslu şirketler vs.) arasındaki öncelikle siyasi,hukuki ve ekonomik ilişkileri inceleyen ve analiz eden bir disiplin olarak Uluslararası İlişkiler, dünyada yer alan toplumların siyasi, hukuki ve ekonomik özelliklerinin “dış”a ilişkin yönlerini irdelemektedir.
+                </p>
+                <p>
+                    1990’ların başında Doğu Bloğunun yıkılmasıyla farklı bir boyut kazanan uluslararası politika, Uluslararası İlişkiler disiplininin çalışılmasını çok değişkenli ve daha karmaşık bir hale getirmiştir.Küreselleşme ve yerelleşme diyalektiği içinde, uluslararası politika devletlerin iç siyasetlerinde belirleyici rol oynayabilmektedir.Bu bağlamda, günümüzde Siyaset Bilimi ve İç Politika, Uluslararası İlişkiler perspektifinden bağımsız incelenememektedir. Uluslararası İlişkiler disiplininin küreselleşme ile birlikte artan bir öneme sahip olması, disiplinin üniversitelerde öğretimini gerekli kılmıştır.Bu amaçla, bölümümüz tarihi ve güncel yaklaşımlarla Uluslararası İlişkiler disiplinini Siyaset Bilimi ile bağlantısını koparmadan öğrencilere aktarmayı hedeflemektedir.
+                </p>
+
+            </div>
+            <div class="temizle"></div>
+        </div>
+        <div class="alt">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">İletişim</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="temizle"></div>
+        </div>
+    </div>
+</body>
+</html>
+

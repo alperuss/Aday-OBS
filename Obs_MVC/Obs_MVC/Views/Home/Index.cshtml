@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html >
+<head>
+     <title>Öğrenci Bilgi Sistemi</title>
+    
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('pattern.jpg') #085e90;
+            font-family: sans-serif;
+        }
+
+        .page {
+           
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #title {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .middle {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .middle-left {
+            
+            float: left;
+            width: 450px;
+        }
+
+
+        .middle-right {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .bottom {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .bottom a {
+                color: #fff;
+            }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="page">
+        <div >
+            <a id="title" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Contact","Home")">Bize Ulaşın</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="middle">
+            <div class="middle-left">
+                <img src="~/üni.jpg" height="450px" width="450px" />
+            </div>
+            <div class="middle-right">
+                <h1>HOŞGELDİNİZ</h1>
+                <p>
+                    X Üniversitesi, Eğitim Vakfı tarafından kurulmuştur. 5 fakülte, 2 enstitü, 1 meslek yüksekokulu ve 4 araştırma-uygulama merkezi ile 1997-1998 öğretim yılında faaliyetine başlamıştır.
+
+                    X Üniversitesi’nin, kuruluşunun 10. Yılında, 22 Ekim 2007 tarihinde temelleri atılan ve 2010-2011 öğretim yılında faaliyete geçen Yeni Kampüsüyle birlikte Ankara’da kampüsü bulunmaktadır.
+
+                    Y Kampüsü’nde Hukuk ve Mimarlık Fakültesi,, Fen-Edebiyat Fakültesi, İktisadi ve İdari Bilimler Fakültesi, Mühendislik Fakültesi yer almaktadır.
+
+                    X Üniversitesi’nde şu anda 5 fakülte, 15 bölüm bulunmaktadır.
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="bottom">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">Bize Ulaşın</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

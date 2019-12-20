@@ -1,0 +1,174 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Öğrenci Bilgi Sistemi</title>
+
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #085e90;
+            font-family: sans-serif;
+        }
+
+        .sayfa {
+            width: 950px;
+            margin: 50px auto;
+        }
+
+        #baslik {
+            float: left;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            float: right;
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            #menu li {
+                float: left;
+            }
+
+                #menu li a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+
+            #menu a:hover {
+                background: #444;
+                border-radius: 15px;
+            }
+
+        .orta {
+            margin-top: 15px;
+            background: #333;
+        }
+
+        .orta-sol {
+            float: left;
+            width: 450px;
+            color: #bbb;
+        }
+
+
+        .orta-sag {
+            float: left;
+            margin: 15px;
+            width: 470px;
+            color: #bbb;
+        }
+
+        .alt {
+            background: #555;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .alt a {
+                color: #fff;
+            }
+
+        .temizle {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+        <div class="ust">
+            <a id="baslik" href="@Url.Action("Index","Home")">
+                <h1>X Üniversitesi</h1>
+            </a>
+            <ul id="menu">
+                <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                <li><a href="@Url.Action("Departments","Home")">Bölümler</a></li>
+                <li><a href="@Url.Action("Kayit","Home")" class="aktif">Kayıt Ol</a></li>
+                <li><a href="@Url.Action("Hukuk","Departments")">İletişim</a></li>
+            </ul>
+            <div class="temizle"></div>
+        </div>
+        <div class="orta">
+            <div class="orta-sol">
+                <img src="~/endüstri.png" height="450px" width="450px" />
+                <fieldset>
+                    <legend>
+                        Yönetim Kurulu
+                    </legend>
+
+
+                    <table border="1">
+
+                        <tr>
+                            <td>Bölüm Dekanı : </td>
+                            <td>Prof. Dr. Kemal GİDER</td>
+
+                        </tr>
+                        <tr>
+                            <td>Dekan Yrd. : </td>
+                            <td>Prof. Dr. Yusuf Ziya SENGÖR </td>
+                        </tr>
+                        <tr>
+                            <td>Böl.Bşk.Yrd. </td>
+                            <td>Dr. Öğretim Üyesi Sertap ARPA </td>
+                        </tr>
+                        <tr>
+                            <td>Çift Anadal Koordinatörü: </td>
+                            <td>Doç. Dr. Osman GAZİ </td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Öğr. Üyesi : </td>
+                            <td> Deniz KARADEMİR </td>
+                        </tr>
+
+                        <tr>
+                            <td>Yüksek Lisans Koordinatörü : </td>
+                            <td> Dr. Öğretim Üyesi Sema AYDIN </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+            </div>
+            <div class="orta-sag">
+                <h1>Endüstri Mühendisliği</h1>
+                <p>
+                    Lisans programı öğrencilerimizin organizasyon ve endüstri problemlerinin çözümünde gerekli olan bilgi ve yetenekleri edinmelerini amaçlamaktadır. Ana ilgi alanları üretim ve servis sistemlerinin analizi, tasarımı, planlaması, yönetimi ve kontrolünden oluşmaktadır. Lisans programını başarıyla tamamlayan öğrenciler Endüstri Mühendisi Derecesi ile mezun olurlar.
+                </p>
+                <p>
+                    Lisans programı matematik, temel bilimler ve mühendislik bilimleri üzerine kurulmuştur. Ayrıca öğrencilerin işletme, insan bilimleri ve sosyal bilimlerdeki altyapılarını geliştirmeleri sağlanmaktadır. Endüstri Mühendisliği bölümü mezunlarının özel sektörde ve kamu sektörlerinde iş olanakları bulunmaktadır.
+                </p>
+               
+                <p>Program Amaçlarımız:</p>
+                <p>
+                    1) Endüstride ve kamu sektöründe iş bulabilecek veya kendi işini kurabilecek,<br />
+                    2) Endüstride ve kamu sektöründe başarıyla çalışabilecek,<br />
+                    3) Lisans üstü eğitim yapabilecek ve başarılı olabilecek,<br />
+                    4) Ulusal veya uluslararası veya çok uluslu işletmeler veya kuruluşlarda ve çok disiplinli çalışma ortamlarında başarıyla çalışabilecektir<br />
+                </p>
+            </div>
+            <div class="temizle"></div>
+        </div>
+        <div class="alt">
+            <p>
+                <a href="@Url.Action("Index","Home")" style="color:#7d0d0d">Anasayfa</a> | <a href="@Url.Action("Departments","Home")" style=" color:#7d0d0d">Bölümler</a> | <a href="@Url.Action("Kayit","Home")" style="color:#7d0d0d" class="aktif">Kayıt Ol</a> |  <a style="color:#7d0d0d" href="#">İletişim</astyle="color:#7d0d0d">
+
+            </p>
+            <div class="temizle"></div>
+        </div>
+    </div>
+</body>
+</html>
+
